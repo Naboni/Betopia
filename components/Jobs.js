@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Button, Modal } from 'antd';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartPie, faDesktop, faDatabase, faCheck, faArrowDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
 

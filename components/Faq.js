@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Collapse, Button } from 'antd';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
 import Image from 'next/image'

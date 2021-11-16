@@ -7,7 +7,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 import AppFooter from '@/components/Layout/Footer';
 import AppHeader from '@/components/Layout/Header';
-import classes from '@/styles/Home.module.css';
 import Head from "next/head";
 import { Layout } from 'antd';
 import AppAd from '@/components/Layout/Ad';

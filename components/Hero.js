@@ -2,8 +2,6 @@ import React from 'react';
 import { Button, Row, Col } from 'antd';
 
 import { Carousel } from 'antd';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDesktop } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import Image from 'next/image'
 
 function AppHero() {
