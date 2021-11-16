@@ -58,8 +58,16 @@ function AppFooter() {
                             <li>Migrate to HypeAuditor</li>
                         </ul>
                     </Col>
+                    <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
+                        <h3 style={{ fontSize: "14px" }}> Terms and Agreement </h3>
+
+                    </Col>
+                    <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
+                        <h3 style={{ fontSize: "14px" }}> Privacy Policy</h3>
+
+                    </Col>
                 </Row>
-                <div className="footerLink2">
+                {/* <div className="footerLink2">
                     <ul>
                         <li> Terms </li>
                         <li> Privacy Policy </li>
@@ -68,7 +76,7 @@ function AppFooter() {
                         <li> Ranking Youtube </li>
                         <li> Categories </li>
                     </ul>
-                </div>
+                </div> */}
                 <BackTop>
                     <div className="goTop"><FontAwesomeIcon icon={faArrowCircleUp} className="fas"></FontAwesomeIcon></div>
                 </BackTop>

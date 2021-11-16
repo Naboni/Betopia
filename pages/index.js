@@ -6,7 +6,6 @@ import AppFaq from '@/components/Faq';
 import AnalyticalReport from '@/components/Analytical_Report';
 
 export default function Home() {
-  const onChange = () => { };
   return (
     <div className="main">
       <AppHero />

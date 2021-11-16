@@ -22,9 +22,10 @@ function MyApp({ Component, pageProps }) {
           as="font"
           crossOrigin=""
         />
+        <title>Betopia Digital Marketplace</title>
       </Head>
       <Header>
-        <AppAd />
+        {/* <AppAd /> */}
         <AppHeader />
       </Header>
       <Content>

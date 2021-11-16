@@ -21,13 +21,13 @@ function AppHeader() {
         // <div className="container-fluid">
         <div className="header">
             <div className="logo">
-                <Image alt="logo" src={image1} className="logoImg" />
+                {/* <Image alt="logo" src={image1} className="logoImg" /> */}
+                <h1 style={{ margin: 0, color: "#ff6436", fontWeight: "bold", fontSize: "24px" }}>Betopia Digital </h1>
             </div>
             <div className="mobileHidden">
                 <input className="search__input" type="text" placeholder="Analyze any influencer..." />
                 <Anchor targetOffset="65">
-                    {/* <Link href="#hero" title="WHY HYPEAUDITOR?" /> */}
-                    <Link href="" title="WHY HYPEAUDITOR?" />
+                    <Link href="#about" title="WHY HYPEAUDITOR?" />
                     <Link href="" title="PRICING" />
                     <Link href="" title="RESOURCES" />
                     <Link href="" title="ABOUT" />

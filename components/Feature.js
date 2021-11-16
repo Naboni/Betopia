@@ -5,16 +5,12 @@ import image1 from '../public/images/Index_01.png';
 import image2 from '../public/images/Index_02.png';
 import image3 from '../public/images/Index_03.png';
 import image4 from '../public/images/Index_04.png';
-// import image5 from '../public/images/unlimited-features.jpg';
-// import image6 from '../public/images/advanced-option.jpg';
 
-import logo from '../public/ic_broken_image.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faChartPie, faDesktop, faDatabase, faCheck, faChartBar, faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faDesktop, faDatabase, faChartBar, faArrowRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
-const { Meta } = Card;
 
 const items = [
     {
@@ -105,14 +101,6 @@ function AppFeature() {
                         </Card>
                     </Col>
                 </Row>
-                <div className="feature_hor_divider">
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                    <div className="div_img" ><Image alt="brand, agency, platform" src={logo} /></div>
-                </div>
             </div>
             <div className="container-fluid">
 
@@ -158,9 +146,7 @@ function AppFeature() {
                         </div>
                     );
                 })}
-
             </div>
-
         </div>
     );
 }

@@ -14,7 +14,7 @@ function AnalyticalReport() {
                     {/* <p>dolor sit amet, consectetur adipisicing elit</p> */}
                 </div>
                 <div className="contentHolder">
-                    <p>Get a best-in-class analytical report of any Instagram, YouTube, TikTok or Twitch account
+                    <p>Get a best-in-class analytical report of any Instagram, YouTube or TikTok account
                     </p>
                 </div>
                 <div className="search-container">
