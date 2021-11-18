@@ -5,12 +5,11 @@ import { config, library } from "@fortawesome/fontawesome-svg-core"; // Tell Fon
 config.autoAddCss = false;
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
-import AppFooter from '@/components/Layout/Footer';
-import AppHeader from '@/components/Layout/Header';
-import Navbar from '@/components/Layout/Navbar';
 import Head from "next/head";
 import { Layout } from 'antd';
 import AppAd from '@/components/Layout/Ad';
+import Navbar from '@/components/Layout/Navbar';
+import AppFooter from '@/components/Layout/Footer';
 const { Header, Content, Footer } = Layout;
 
 function MyApp({ Component, pageProps }) {
@@ -27,7 +26,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header>
         {/* <AppAd /> */}
-        {/* <AppHeader /> */}
         <Navbar />
       </Header>
       <Content>
