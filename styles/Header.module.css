@@ -1,0 +1,200 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  font-family: "Poppins";
+}
+
+.logo {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 25px;
+  min-width: 200px;
+}
+
+/* .header .ant-anchor-wrapper {
+  background: none;
+}
+
+.header .ant-anchor {
+  display: flex;
+}
+
+.header .ant-anchor-ink {
+  display: none;
+}
+
+.header .ant-anchor-link {
+  padding: 0 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 12px;
+  position: relative;
+  color: #000;
+}
+
+.header .ant-anchor-link-active > .ant-anchor-link-title {
+  color: black;
+}
+.header .ant-anchor-link-title:after,
+.header .ant-anchor-link-title:before {
+  color: #954e4d;
+}
+
+.header .loginLink {
+  color: red;
+} */
+
+.search__input {
+  width: 300px;
+  padding: 10px 12px;
+
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #575756;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 5px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  margin-right: 50px;
+}
+
+.search__input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+}
+
+.linksHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.linksHolder {
+  list-style-type: none;
+}
+
+.link_s {
+  display: block;
+  text-decoration: none;
+}
+
+/* .header .ant-menu {
+  border: 0;
+  background: none !important;
+}
+
+.header .ant-menu li.ant-menu-item {
+  position: relative;
+  color: #333;
+}
+
+.header .ant-menu li.ant-menu-item:before,
+.header .ant-menu li.ant-menu-item:after {
+  content: "";
+  background: #ff8561;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.header .ant-menu li.ant-menu-item:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-menu li.ant-menu-item,
+.header .ant-menu li.ant-menu-item-selected {
+  border: 0 !important;
+}
+
+.header .ant-menu li.ant-menu-item-selected,
+.header .ant-menu li.ant-menu-item:hover {
+  color: #ff8561;
+  background: none;
+}
+
+.header .ant-menu li.ant-menu-item-selected:before,
+.header .ant-menu li.ant-menu-item:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-menu li.ant-menu-item-selected:after,
+.header .ant-menu li.ant-menu-item:hover:after {
+  right: 5%;
+  opacity: 1;
+} */
+.mobileVisible {
+  display: none;
+}
+
+.mobileHidden {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1.14);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1);
+  }
+  .header {
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+
+  .mobileVisible {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .search-container {
+    width: 100%;
+  }
+
+  .search-container .search-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-container-link {
+    width: 95%;
+  }
+
+  .search-container button {
+    background: #434c5d;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #434c5d;
+    border-style: solid solid solid none;
+    border-radius: 0 10px 10px 0;
+    width: 25%;
+  }
+}

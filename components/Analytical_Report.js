@@ -14,7 +14,8 @@ function AnalyticalReport() {
                     {/* <p>dolor sit amet, consectetur adipisicing elit</p> */}
                 </div>
                 <div className="contentHolder">
-                    <p>Get a best-in-class analytical report of any Instagram, YouTube or TikTok account
+                    <p>
+                        Get a first-rate analytical report on any Instagram, YouTube, or TikTok account.
                     </p>
                 </div>
                 <div className="search-container">
@@ -31,7 +32,7 @@ function AnalyticalReport() {
                                     <FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon>
                                 </Col>
                                 <Col md={{ span: 21 }}>
-                                    Over 23M influencers in the database
+                                    Over 50+ influencers in the database
                                 </Col>
                             </Row>
                         </Col>
@@ -41,7 +42,7 @@ function AnalyticalReport() {
                                     <FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon>
                                 </Col>
                                 <Col md={{ span: 21 }}>
-                                    35+ metrics for influencer vetting
+                                    Multiple metrics for influencer vetting
                                 </Col>
                             </Row>
                         </Col>

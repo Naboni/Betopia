@@ -12,7 +12,7 @@ export default function Home() {
       <AppAbout />
       <AnalyticalReport />
       <AppFeature />
-      <AppWorks />
+      {/* <AppWorks /> */}
       <AppFaq />
     </div>
   );

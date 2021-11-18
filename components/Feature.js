@@ -18,7 +18,7 @@ const items = [
         icon: <FontAwesomeIcon icon={faChartBar} color="#0d9fe6"></FontAwesomeIcon>,
         section: 'DISCOVERY HUB',
         title: 'Find the best influencers with Influencer Discovery, the largest in the market',
-        content: 'Discover perfectly matched Instagram, YouTube and TikTok influencers across 12M+ profiles using a set of filters that will help to refine the list to high-quality profiles.',
+        content: "Discover precisely matched Instagram, YouTube, and TikTok influencers across 50+ accounts by utilizing a series of criteria to narrow the results down to high-quality profiles.",
         image: image1,
         color: "#0d9fe6"
     },
@@ -26,8 +26,8 @@ const items = [
         key: '2',
         icon: <FontAwesomeIcon icon={faDatabase} color="#ff6436"></FontAwesomeIcon>,
         section: 'REPORT HUB',
-        title: 'Industry standard in advanced Instagram, YouTube, TikTok and Twitch analytical reports',
-        content: 'Over 35 in-depth metrics to analyze Instagram, YouTube, TikTok & Twitch influencers. Audience location, age-gender split, authenticity & reachability, overall audience quality.',
+        title: 'Industry standard in advanced Instagram, YouTube and TikTok analytical reports',
+        content: "Multiple comprehensive metrics for analyzing Instagram, YouTube and TikTok influencers. Location of the audience, age-gender split, authenticity and reachability, and overall audience quality",
         image: image2,
         color: "#ff6436"
     },
@@ -36,7 +36,7 @@ const items = [
         icon: <FontAwesomeIcon icon={faDesktop} color="#8455d0"></FontAwesomeIcon>,
         section: 'CAMPAIGN MANAGEMENT',
         title: 'Manage and monitor your influencer marketing campaigns',
-        content: 'Manage and automate your campaign at every stage from influencer lists to a final campaign report. Monitor your campaign effectiveness and make necessary adjustments.',
+        content: "From influencer lists to a final campaign report, manage and automate your campaign at every stage. Keep an eye on the efficacy of your campaign and make any required changes.",
         image: image3,
         color: "#8455d0"
     },
@@ -44,8 +44,8 @@ const items = [
         key: '4',
         icon: <FontAwesomeIcon icon={faDatabase} color="#8455d0"></FontAwesomeIcon>,
         section: 'MARKET ANALYSIS',
-        title: 'Get a snapshot of the influencer marketing landscape',
-        content: 'Explore the competitive landscape and evaluate influencer marketing performance of your rivals. Compare multiple brands side by side and discover the top market players in a particular country and niche.',
+        title: 'Get an overview of the influencer marketing landscape.',
+        content: "Investigate the competitive environment and analyze your competitors' influencer marketing performance. Compare various brands side by side to identify the top market players in a certain nation or specialty.",
         image: image4,
         color: "#8455d0"
     },
@@ -57,13 +57,15 @@ function AppFeature() {
             <div className="container-fluid">
 
                 <div className="featureTitle">
-                    <h2>We deliver industry standard data & insights for success in Influencer marketing:</h2>
+                    <h2>
+                        We provide data and insights to help you succeed in Influencer marketing:
+                    </h2>
                 </div>
                 <Row gutter={[20, 20]}>
                     <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }}>
                         <Card className="featureCard">
                             <div className="featureCardTitle">
-                                <h2>11M+</h2>
+                                <h2>60+</h2>
                             </div>
                             <div className="featureCardDetail">
                                 <p>Total accounts in database</p>
@@ -73,7 +75,7 @@ function AppFeature() {
                     <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }}>
                         <Card className="featureCard">
                             <div className="featureCardTitle">
-                                <h2>15k</h2>
+                                <h2>5+</h2>
                             </div>
                             <div className="featureCardDetail">
                                 <p>New Influencers discovered daily</p>
@@ -83,7 +85,7 @@ function AppFeature() {
                     <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 6 }}>
                         <Card className="featureCard">
                             <div className="featureCardTitle">
-                                <h2>5M+</h2>
+                                <h2>8+</h2>
                             </div>
                             <div className="featureCardDetail">
                                 <p>Total report requests processed</p>
@@ -105,7 +107,7 @@ function AppFeature() {
             <div className="container-fluid">
 
                 <div className="featureTitle">
-                    <h2>Use HypeAuditor on every step of Influencer marketing workflow & analytics:</h2>
+                    <h2>Use Betopia Digital on every step of Influencer marketing workflow & analytics:</h2>
                 </div>
                 {items.map(item => {
                     return (

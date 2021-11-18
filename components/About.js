@@ -10,19 +10,34 @@ const items = [
         key: '1',
         icon: <FontAwesomeIcon icon={faChartPie}></FontAwesomeIcon>,
         title: 'Discover Influencers',
-        content: 'Discover influencers with the audiences you need within a 10M+ database',
+        content: 'Discover influencers with the audiences you need within a 50+ database',
+        list: [
+            "50+ database",
+            "Demographic search",
+            "Audience Quality filters"
+        ]
     },
     {
         key: '2',
         icon: <FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon>,
         title: 'Analyze Accounts',
-        content: 'Over 35 in-depth metrics to analyse Instagram, YouTube, and TikTok influencers',
+        content: 'Multiple metrics to analyse Instagram, YouTube, and TikTok influencers',
+        list: [
+            "Audience Demographics",
+            "Fraud Detection",
+            "Brand Affinity"
+        ]
     },
     {
         key: '3',
         icon: <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>,
         title: 'Manage Campaigns',
         content: 'Manage and monitor your influencer marketing campaigns',
+        list: [
+            "Create a media plan for your campaign",
+            "Get estimates for key campaign KPIs",
+            "Understand how your campaign performs"
+        ]
     },
 ]
 
@@ -31,14 +46,14 @@ function AppAbout() {
         <div id="about" className="aboutBlock">
             <div className="container-fluid">
                 <div className="titleHolder">
-                    <h2>A full stack of solutions at every step of influencer marketing workflow:</h2>
+                    <h2>Every phase of the influencer marketing workflow is covered by a comprehensive suite of solutions:</h2>
                 </div>
                 <Row gutter={[16, 16]}>
                     {items.map(item => {
                         return (
                             <Col md={{ span: 8 }} key={item.key}>
                                 <div className="content">
-                                    <div style={{ margin: "20px" }}>
+                                    <div>
                                         <div className="sectionHolder">
                                             <div className="card_text">
                                                 {item.title}
@@ -48,17 +63,36 @@ function AppAbout() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div style={{ margin: "20px" }}>
+                                    <div>
                                         <p>{item.content}</p>
                                     </div>
-                                    <div style={{ margin: "20px" }} className="aboutList">
-                                        <ul>
-                                            <li><FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon> &nbsp; 11M+ database</li>
-                                            <li><FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon> &nbsp; Demographic search</li>
-                                            <li><FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon> &nbsp; Audience Quality filters</li>
-                                        </ul>
+                                    <div className="aboutList">
+                                        <Row>
+                                            <Col span={3}>
+                                                <FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon>
+                                            </Col>
+                                            <Col span={21}>
+                                                {item.list[0]}
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col span={3}>
+                                                <FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon>
+                                            </Col>
+                                            <Col span={21}>
+                                                {item.list[1]}
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col span={3}>
+                                                <FontAwesomeIcon icon={faCheck} style={{ color: "#46a16d" }}></FontAwesomeIcon>
+                                            </Col>
+                                            <Col span={21}>
+                                                {item.list[2]}
+                                            </Col>
+                                        </Row>
                                     </div>
-                                    <div style={{ display: "flex", flexDirection: "column", margin: "20px" }}>
+                                    <div style={{ display: "flex", flexDirection: "column" }}>
                                         <Button style={{ backgroundColor: "#ff6436", borderRadius: "5px", border: "1px solid #ff6436", color: "white", fontWeight: "600", width: "60%", margin: "10px auto" }} size="large">GET STARTED</Button>
                                         <Button style={{ backgroundColor: "white", borderRadius: "5px", border: "1px solid white", color: "grey", fontWeight: "600", width: "60%", margin: "0 auto" }} size="large">LEARN MORE</Button>
                                     </div>
@@ -68,10 +102,10 @@ function AppAbout() {
                             </Col>
                         );
                     })}
-                </Row>
-            </div>
+                </Row >
+            </div >
 
-        </div>
+        </div >
     );
 }
 

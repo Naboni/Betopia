@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '@/styles/Footer.module.css'
 
 import { BackTop, Row, Col, Button } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,17 +12,17 @@ function AppFooter() {
             <div className="footer">
                 <Row justify="start" className="footerLink" gutter={[16, 16]}>
                     <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }} >
-                        <div className="footerHeader">
+                        <div className={styles.footerHeader}>
 
                             <div>
-                                <h3> NEED MORE INFO? </h3>
+                                <h3 className={styles.footerTitle}> NEED MORE INFO? </h3>
                             </div>
                             <Button style={{ backgroundColor: "#ff6436", borderRadius: "5px", border: "1px solid #ff6436", color: "white", fontWeight: "600", padding: "0 40px" }} size="large">REQUEST LIFE DEMO</Button>
                         </div>
                     </Col>
                     <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
-                        <h3> PLATFORM </h3>
-                        <ul>
+                        <h3 className={styles.footerTitle}> PLATFORM </h3>
+                        <ul className={styles.footerList}>
                             <li>Influencer Analytics</li>
                             <li>Influencer Discovery</li>
                             <li>Campaign Management</li>
@@ -29,8 +30,8 @@ function AppFooter() {
                         </ul>
                     </Col>
                     <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
-                        <h3> COMPANY </h3>
-                        <ul>
+                        <h3 className={styles.footerTitle}> COMPANY </h3>
+                        <ul className={styles.footerList}>
                             <li>Technology</li>
                             <li>Press</li>
                             <li>Customers</li>
@@ -39,8 +40,8 @@ function AppFooter() {
                         </ul>
                     </Col>
                     <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
-                        <h3> RESOURCES </h3>
-                        <ul>
+                        <h3 className={styles.footerTitle}> RESOURCES </h3>
+                        <ul className={styles.footerList}>
                             <li>Blog</li>
                             <li>FAQ</li>
                             <li>Free Tools</li>
@@ -49,8 +50,8 @@ function AppFooter() {
                         </ul>
                     </Col>
                     <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 4 }}>
-                        <h3> GET STARTED </h3>
-                        <ul>
+                        <h3 className={styles.footerTitle}> GET STARTED </h3>
+                        <ul className={styles.footerList}>
                             <li>Create account</li>
                             <li>Contact us</li>
                             <li>Request demo</li>
@@ -67,16 +68,7 @@ function AppFooter() {
 
                     </Col>
                 </Row>
-                {/* <div className="footerLink2">
-                    <ul>
-                        <li> Terms </li>
-                        <li> Privacy Policy </li>
-                        <li> Reports Catalogue </li>
-                        <li> Ranking Instagram </li>
-                        <li> Ranking Youtube </li>
-                        <li> Categories </li>
-                    </ul>
-                </div> */}
+
                 <BackTop>
                     <div className="goTop"><FontAwesomeIcon icon={faArrowCircleUp} className="fas"></FontAwesomeIcon></div>
                 </BackTop>

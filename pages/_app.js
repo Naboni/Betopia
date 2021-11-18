@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 import AppFooter from '@/components/Layout/Footer';
 import AppHeader from '@/components/Layout/Header';
+import Navbar from '@/components/Layout/Navbar';
 import Head from "next/head";
 import { Layout } from 'antd';
 import AppAd from '@/components/Layout/Ad';
@@ -26,7 +27,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header>
         {/* <AppAd /> */}
-        <AppHeader />
+        {/* <AppHeader /> */}
+        <Navbar />
       </Header>
       <Content>
         <Component {...pageProps} />
